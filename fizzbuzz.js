@@ -12,3 +12,4 @@ const fizzer = () => {
   }
 }
 fizzer();
+//fizz buzz is super easy just remember modulus. %

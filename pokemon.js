@@ -1,7 +1,7 @@
 const readline = require('readline');
 
 const writer = (text) => {
-  console.log(text)
+  console.log('\x1b[36m%s\x1b[0m', text)
 }
 
 const player = [
@@ -15,21 +15,20 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-const main = (e) => { //event chain
+const start = (e) => { //event chain
   switch (e) {
     case 'intro':
       writer('Good Morning!', player.name)
       writer('Welcome to Pokemon.js', player.name)
       rl.question('What is your name? ', (answer) => {
-        console.log(`Wow, what a cool name!: ${answer}`);
-        main('2');
+        console.log('\x1b[32m', `${answer}! Wow, what a cool name!`);
+        start('select');
       });
       break;
-    case '2':
-      writer('Good Morning!', player.name)
-      writer('Welcome to Pokemon.js', player.name)
-      rl.question('What is your name? ', (answer) => {
-        console.log(`Wow, what a cool name!: ${answer}`);
+    case 'select':
+      writer('Please select your Monster!', player.name)
+      writer('There are two to choose from, which would you like?', player.name)
+      rl.question('Dragon or Cat', (answer) => {
         answer === 'yes' ? console.log('Woah!') : console.log('hmm')
         battle("intro");
       });
@@ -59,7 +58,7 @@ const battle = (e) => { //event chain
       break;
   }
 }
-main('intro');
+start('intro');
 
 //react / mobx / firebase / pokemon battle system /
 // data structures,   users > email / stats / monsters etc. / ranking

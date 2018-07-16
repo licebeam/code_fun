@@ -61,5 +61,21 @@ const battle = (e) => { //event chain
 }
 main('intro');
 
+//react / mobx / firebase / pokemon battle system /
+// data structures,   users > email / stats / monsters etc. / ranking
+// monster data structure // 
+// monster name, type, stats, etc. 
 
+
+// react dictates the battle
+// firebase will handle serverside actions as text commands.
+// need to be scrubbed with a hash to insure they are associated with a specific account
+// players will never know their hash/ potential security / cheating issues? 
+
+//combat should be somewhat skill based perhaps like a card game?
+//every time you level up you can replace a card in your deck? 
+
+//card monsters? 
+
+//each monster type can only draw from specific pools.
 

@@ -8,7 +8,7 @@ function getRandomInt(max) {
 const textArr = [
   `Hack The Planet!`,
   'Time.. Too.. Die..',
-  'Ah ah ah, you didn\'t say the magic work',
+  'Ah ah ah, you didn\'t say the magic word',
   'Hold on to ya butts.',
   'You gotta stop lettin ya momma dress you!',
   'Hasta la vista baby',

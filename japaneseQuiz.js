@@ -13,11 +13,11 @@ function getRandomInt(max) {
 
 const japaneseQuestions = [
   {
-    question: `行く | いく`,
+    question: `行く | いく | Iku`,
     answer: 'to go'
   },
   {
-    question: `見る | みる`,
+    question: `見る | みる | Miru`,
     answer: 'to see'
   }
 ]

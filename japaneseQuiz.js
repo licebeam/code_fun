@@ -16,6 +16,10 @@ const japaneseQuestions = [
     answer: 'to go'
   },
   {
+    question: `来る | くる | Kuru`,
+    answer: 'to come'
+  },
+  {
     question: `食べる | たべる | Taberu`,
     answer: 'to eat'
   },

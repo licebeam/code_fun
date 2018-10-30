@@ -1,5 +1,4 @@
-
-var colors = require('colors')
+var colors = require('colors');
 const readline = require('readline');
 
 const rl = readline.createInterface({
@@ -17,6 +16,14 @@ const japaneseQuestions = [
     answer: 'to go'
   },
   {
+    question: `来る | くる | Kuru`,
+    answer: 'to come'
+  },
+  {
+    question: `食べる | たべる | Taberu`,
+    answer: 'to eat'
+  },
+  {
     question: `見る | みる | Miru`,
     answer: 'to see'
   },
@@ -29,20 +36,39 @@ const japaneseQuestions = [
     answer: 'home'
   },
   {
+    question: `お金 | おかね | Okane`,
+    answer: 'money'
+  },
+  {
     question: `これ | Kore`,
     answer: 'this'
+  },
+  {
+    question: `それ | Sore`,
+    answer: 'that'
   }
-]
+];
 
-const colorName = (text) => {
-  let currentQuestion = japaneseQuestions[getRandomInt(japaneseQuestions.length)]
-  console.log(colors.yellow('What is the meaning of: ') + colors.green(currentQuestion.question));
-  rl.question(colors.yellow('What is the answer: '), (answer) => {
+const colorName = text => {
+  let currentQuestion =
+    japaneseQuestions[getRandomInt(japaneseQuestions.length)];
+  console.log(
+    colors.yellow('What is the meaning of: ') +
+      colors.green(currentQuestion.question)
+  );
+  rl.question(colors.yellow('What is the answer: '), answer => {
     if (currentQuestion.answer === answer) {
-      console.log(colors.yellow('Good job, the correct answer was: ') + colors.rainbow(currentQuestion.answer));
-    } else console.log(colors.yellow("Sorry the correct asnwer is: ") + colors.red(currentQuestion.answer));
+      console.log(
+        colors.yellow('Good job, the correct answer was: ') +
+          colors.rainbow(currentQuestion.answer)
+      );
+    } else
+      console.log(
+        colors.yellow('Sorry the correct asnwer is: ') +
+          colors.red(currentQuestion.answer)
+      );
     rl.close();
   });
-}
+};
 
-colorName(japaneseQuestions); 
+colorName(japaneseQuestions);

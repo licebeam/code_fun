@@ -38,6 +38,10 @@ const japaneseQuestions = [
   {
     question: `これ | Kore`,
     answer: 'this'
+  },
+  {
+    question: `それ | Sore`,
+    answer: 'that'
   }
 ];
 

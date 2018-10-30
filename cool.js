@@ -6,17 +6,25 @@ const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
-const books = [{ id: 1, text: 'I am a book', title: 'Salems Lot' }]
+const books = [
+  { id: 1, text: 'I am a book', title: 'Salems Lot' },
+  { id: 2, text: 'I am a book', title: 'It' }]
 
 const checkOut = (book) => {
   //take book
+  writer(`You've checked out ${book}, maybe you should read it.`)
 }
 
-const checkShelf = (books) => {
+const checkShelf = (bookArray) => {
   //look for books
   writer('You look deeply at the books');
+  bookArray.map(book => {
+    return writer(`you see ${book.title}`)
+  }  
+  );
   rl.question('What book do you want to check out?', (answer) => {
     console.log(`${answer}! Nice book choice`);
+    checkOut(answer)
   });
 }
 

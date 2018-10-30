@@ -36,6 +36,10 @@ const japaneseQuestions = [
     answer: 'home'
   },
   {
+    question: `お金 | おかね | Okane`,
+    answer: 'money'
+  },
+  {
     question: `これ | Kore`,
     answer: 'this'
   },

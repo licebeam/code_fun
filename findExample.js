@@ -23,6 +23,9 @@ const badwords = ['cool', 'test'];
 // }
 
 
-findBadWord = (word) => !!badwords.find(bw => bw === word);
+// findBadWord = (word) => !!badwords.find(bw => bw === word);
 
-console.log(findBadWord('adsda'))
+
+findBadWord = word => badwords.some(w => w === word);
+
+console.log(findBadWord('test'))

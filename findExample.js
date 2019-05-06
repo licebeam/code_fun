@@ -12,14 +12,17 @@ const badwords = ['cool', 'test'];
 
 // console.log(findBadWord('test'))
 
-checkGoodWord = (word) => {
-  const badword = !badwords.find(bw => bw === word);
-  if (badword) {
-    console.log(badword + ' Not a bad word.')
-    return false;
-  }
-  console.log(badword)
-  return true;
-}
+// checkGoodWord = (word) => {
+//   const badword = !badwords.find(bw => bw === word);
+//   if (badword) {
+//     console.log(badword + ' Not a bad word.')
+//     return false;
+//   }
+//   console.log(badword)
+//   return true;
+// }
 
-console.log(checkGoodWord('I will return false'))
+
+findBadWord = (word) => !!badwords.find(bw => bw === word);
+
+console.log(findBadWord('adsda'))

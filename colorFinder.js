@@ -1,4 +1,4 @@
-color2dArray = [[2, 2, 2], [2, 1, 2], [2, 2, 1], [1, 1, 2]]
+color2dArray = [[2, 2, 2], [2, 1, 2], [2, 2, 2], [1, 1, 2]]
 
 let items = []
 color2dArray.map((cArr, i) => {

@@ -1,6 +1,10 @@
 def map_array(arr)
-  arr.map {|item| puts item}
+  new_items = []
+  arr.map {|item| new_items << item}
+  return new_items
 end
 
 test_array = ['hey', 'you', 'smell']
-map_array(test_array)
+test_map =  map_array(test_array)
+
+puts test_map

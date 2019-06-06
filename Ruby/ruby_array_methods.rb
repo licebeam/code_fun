@@ -1,7 +1,7 @@
 def map_array(arr)
   new_items = []
   arr.map {|item| new_items << item}
-  return new_items
+  new_items
 end
 
 test_array = ['hey', 'you', 'smell']

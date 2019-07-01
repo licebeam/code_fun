@@ -9,6 +9,18 @@ class MyClass {
 }
 
 
+function ClassBoyz() {
+  this.poop = 'hey';
+  this.checkNum = () => {
+
+  }
+}
+
+const checkit = new ClassBoyz;
+
+console.log(checkit.checkNum())
+
+
 
 
 const test = new MyClass;

@@ -3,4 +3,4 @@ const checkString = str => {
 }
 
 
-checkString('hqweqweey')
+checkString('hey')
